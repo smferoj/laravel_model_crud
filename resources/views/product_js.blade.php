@@ -11,5 +11,12 @@
 <script>
     $(document).ready(function() {
         // alert();
+        $(document).on('click', '.add_product', function(e){
+                e.preventDefault();
+                let name = $('#name').val();
+                let price = $('#price').val();
+                // console.log(name+price);
+                
+        });
     });
 </script>

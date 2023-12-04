@@ -16,3 +16,12 @@ Ajax setup and jquery setup
 
 ==============crete product=========
 1. products.blade.php=>include(add_prouct_modal.blade.php)
+2. Crate route (web.php) 
+Route::post('/add-product', [ProductController::class, 'addProduct'])->name('add.product');
+3. Catch Add Product button in product_js file and request send to server
+ $(document).on('click', '.add_product', function(e){
+                e.preventDefault();
+
+4. Catch name and price field and value
+let name = $('#name').val();
+let price = $('#price').val();
